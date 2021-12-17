@@ -67,3 +67,4 @@ Cached files are stored under [data](data) folder:
 [assists.csv](data/assists.csv) stores the Top assists table under [Season statistics](https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga#Season_statistics) section.  
 **More details please see the Project Document I submitted on Canvas.**
 
+## Data Structure
