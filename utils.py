@@ -89,8 +89,14 @@ class PlayerNode:
         self.name = player['player']['name']
         self.details['age'] = player['player']['age']
         self.details['nationality'] = player['player']['nationality']
-        self.details['height'] = player['player']['height']
-        self.details['weight'] = player['player']['weight']
+        if player['player']['height'] is None:
+            self.details['height'] = ""
+        else:
+            self.details['height'] = player['player']['height']
+        if player['player']['weight'] is None:
+            self.details['weight'] = ""
+        else:
+            self.details['weight'] = player['player']['weight']
         self.details['photo'] = player['player']['photo']
         self.details['matches_played'] = player['statistics'][0]['games']['appearences']
         self.details['lineups'] = player['statistics'][0]['games']['lineups']
