@@ -3,7 +3,8 @@
 
 ## Overview 
 <img src="images/LaLiga_Santander.png" width="100" align="right">
-La Liga is the men's top professional football division of the Spanish football league system.
+
+[La Liga](https://www.laliga.com/en-US) is the men's top professional football division of the Spanish football league system.
 
 In this project, I collected La Liga 2020-21 season data from multiple sources, and processed them into a tree structure. A flask app is created to provide interactive data presentations.
 
@@ -17,7 +18,6 @@ Store your API key in a new file called secrets.py:
 x_apisports_key = '<your api-key>'
 ```
 **For SI507 teaching team, kindly use the secrets.py which I submitted on Canvas.**
-
 ### Packages
 Required packages for the project are listed in [requirements.txt](requirements.txt):
 ```text
