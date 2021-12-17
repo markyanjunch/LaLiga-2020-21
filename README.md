@@ -28,7 +28,7 @@ Flask>=2.0.2
 beautifulsoup4>=4.10.0
 plotly>=5.4.0
 ```
-You can install the packages in command line using:
+You can install the packages in the command line using:
 ```commandline
 pip install -r requirements.txt
 ```
@@ -50,3 +50,20 @@ You will see something like:
 In your browser, visit http://127.0.0.1:5000/ to start playing with the app!
 
 ## Data Sources
+1. API-FOOTBALL: https://www.api-football.com/  
+The API is a RESTFUL API for football data. It is used to get information of the league, teams and players. 
+Methods to access and cache the data are included in [api_cache.py](api_cache.py).  
+Cached files are stored under [data](data) folder:  
+[teams_cache.json](data/teams_cache.json) contains information of the league and all the 20 teams.  
+Players data for each team are stored in **players_cache_<team_id>.json** with corresponding team ids.  
+**More details please see the Project Document I submitted on Canvas.**
+
+2. 2020–21 La Liga Wikipedia page: https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga  
+This is the Wikipedia page for La Liga 2020-21 season. 
+It is used to get information of top goal scorers and top assist in that match season.  
+These two tables are scraped and cached using the methods in [scrape_cache.py](scrape_cache.py).  
+Cached files are stored under [data](data/) folder:  
+[goalscorers.csv](data/goalscorers.csv) stores the Top goalscorers table under [Season statistics](https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga#Season_statistics) section.  
+[assists.csv](data/assists.csv) stores the Top assists table under [Season statistics](https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga#Season_statistics) section.  
+**More details please see the Project Document I submitted on Canvas.**
+
