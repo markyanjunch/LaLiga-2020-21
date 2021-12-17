@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {text-align: center}
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>League Standings</title>
+</head>
+<body>
+    <h1>
+        League Standings
+    </h1>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Logo</th>
+            <th>Matches Played</th>
+            <th>Win</th>
+            <th>Draw</th>
+            <th>Lose</th>
+            <th>For</th>
+            <th>Against</th>
+            <th>GoalsDiff</th>
+            <th>Points</th>
+            <th>Description</th>
+        </tr>
+        {% for team in teams %}
+            <tr>
+                <td>{{ team['details']['rank'] }}</td>
+                <td>{{ team['name'] }}</td>
+                <td><img src={{ team['details']['logo'] }} width="100" ></td>
+                <td>{{ team['details']['played'] }}</td>
+                <td>{{ team['details']['win'] }}</td>
+                <td>{{ team['details']['draw'] }}</td>
+                <td>{{ team['details']['lose'] }}</td>
+                <td>{{ team['details']['goals_for'] }}</td>
+                <td>{{ team['details']['goals_against'] }}</td>
+                <td>{{ team['details']['goalsDiff'] }}</td>
+                <td>{{ team['details']['points'] }}</td>
+                <td>{{ team['details']['description'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <div class="button">
+        <p>
+            <a href="javascript:history.back()">Back</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/">Home</a>
+        </p>
+    </div>
+</body>
+</html>

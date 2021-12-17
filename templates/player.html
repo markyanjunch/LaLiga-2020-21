@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {text-align: center}
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>{{ name }}</title>
+</head>
+<body>
+    <h1>
+        Player information of {{ name }}
+    </h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Age</th>
+            <th>Nationality</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Played</th>
+            <th>Lineups</th>
+            <th>Minutes</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td><img src={{ photo }} width="100" ></td>
+            <td>{{ name }}</td>
+            <td>{{ position }}</td>
+            <td>{{ age }}</td>
+            <td>{{ nationality }}</td>
+            <td>{{ height }}</td>
+            <td>{{ weight }}</td>
+            <td>{{ played }}</td>
+            <td>{{ lineups }}</td>
+            <td>{{ minutes }}</td>
+            <td>{{ rating }}</td>
+        </tr>
+    </table>
+    <div class="button">
+        <p>
+            <a href="/tree">Back to tree structure</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/">Home</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/scorers">Top goal scorers</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/assists">Top assists</a>
+        </p>
+    </div>
+</body>
+</html>

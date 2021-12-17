@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<base href="http://127.0.0.1:5000/">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Remove default bullets */
+        ul, #myUL {
+          list-style-type: none;
+        }
+
+        /* Remove margins and padding from the parent ul */
+        #myUL {
+          margin: 0;
+          padding: 0;
+        }
+
+        /* Style the caret/arrow */
+        .caret {
+          cursor: pointer;
+          user-select: none; /* Prevent text selection */
+        }
+
+        /* Create the caret/arrow with a unicode, and style it */
+        .caret::before {
+          content: "\25B6";
+          color: #0037fe;
+          display: inline-block;
+          margin-right: 6px;
+        }
+
+        /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+        .caret-down::before {
+          transform: rotate(90deg);
+        }
+
+        /* Hide the nested list */
+        .nested {
+          display: none;
+        }
+
+        /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+        .active {
+          display: block;
+        }
+    </style>
+    <title>LaLiga 2020-21</title>
+</head>
+<body>
+<h1>
+    Teams and Players in {{ parent[0] }}
+</h1>
+<img src ={{ parent[1] }} >
+<ul id="myUL">
+    <li><span class="caret">{{ parent[0] }} <a href="/league">see detail</a></span>
+        <ul class="nested">
+            {% for team in children %}
+                <li><span class="caret">{{ team[0] }} <a href="/team/{{ team[1] }}">see detail</a></span>
+                    <ul class="nested">
+                        {% for player in team[2] %}
+                            <li><a href="/player/{{ player[1] }}">{{ player[0] }}</a> ({{ player[2] }})</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </li>
+</ul>
+<p>
+    <a href="/">Home</a>
+</p>
+<script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+</script>
+
+</body>
+</html>

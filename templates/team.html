@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<base href="http://127.0.0.1:5000/">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {text-align: center}
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>{{ name }}</title>
+</head>
+<body>
+<h1>
+    Team Information of {{ name }}
+</h1>
+<table>
+        <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Logo</th>
+            <th>Matches Played</th>
+            <th>Win</th>
+            <th>Draw</th>
+            <th>Lose</th>
+            <th>For</th>
+            <th>Against</th>
+            <th>GoalsDiff</th>
+            <th>Points</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>{{ rank }}</td>
+            <td>{{ name }}</td>
+            <td><img src={{ logo }} width="100" ></td>
+            <td>{{ played }}</td>
+            <td>{{ win }}</td>
+            <td>{{ draw }}</td>
+            <td>{{ lose }}</td>
+            <td>{{ goals_for }}</td>
+            <td>{{ goals_against }}</td>
+            <td>{{ goalsDiff }}</td>
+            <td>{{ points }}</td>
+            <td>{{ description }}</td>
+        </tr>
+    </table>
+    <div class="button">
+        <p>
+            <a href="/tree">Back to tree structure</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/">Home</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/team/{{ id }}/players">See all players in {{ name }}</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/standings">See all teams</a>
+        </p>
+    </div>
+</body>
+</html>

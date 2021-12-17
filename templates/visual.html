@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1 {text-align: center}
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>Visualization</title>
+</head>
+<body>
+    <h1>
+        Number of players by {{ type }}<br/>
+        in La Liga 2020-21 season
+    </h1>
+    {{ plot_div | safe }}
+    <div class="button">
+        <p>
+            <a href="javascript:history.back()">Back</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/">Home</a>
+        </p>
+    </div>
+</body>
+</html>

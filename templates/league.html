@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {text-align: center}
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>La Liga</title>
+</head>
+<body>
+    <h1> League Information </h1>
+    <table>
+        <tr>
+            <th>League Name</th>
+            <th>Logo</th>
+            <th>Country</th>
+            <th>Flag</th>
+            <th>Season</th>
+        </tr>
+        <tr>
+            <td>{{ name }}</td>
+            <td><img src={{ logo }} width="100" ></td>
+            <td>{{ country }}</td>
+            <td><img src ={{ flag }} width="200" ></td>
+            <td>{{ season }}</td>
+        </tr>
+    </table>
+    <div class="button">
+        <p>
+            <a href="/tree">Back to tree structure</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/">Home</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/standings">See standings</a>
+        </p>
+    </div>
+</body>
+</html>

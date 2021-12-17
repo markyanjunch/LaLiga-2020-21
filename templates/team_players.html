@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {text-align: center}
+        .button {
+            text-align: center;
+        }
+    </style>
+    <title>Players in {{ name }}</title>
+</head>
+<body>
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <h1>
+        Players in {{ name }}
+    </h1>
+    <table class="sortable">
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Age</th>
+            <th>Nationality</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Played</th>
+            <th>Lineups</th>
+            <th>Minutes</th>
+            <th>Rating</th>
+        </tr>
+        {% for player in players %}
+            <tr>
+                <td><img src={{ player['details']['photo'] }} width="100" ></td>
+                <td>{{ player['name'] }}</td>
+                <td>{{ player['details']['position'] }}</td>
+                <td>{{ player['details']['age'] }}</td>
+                <td>{{ player['details']['nationality'] }}</td>
+                <td>{{ player['details']['height'] }}</td>
+                <td>{{ player['details']['weight'] }}</td>
+                <td>{{ player['details']['matches_played'] }}</td>
+                <td>{{ player['details']['lineups'] }}</td>
+                <td>{{ player['details']['minutes'] }}</td>
+                <td>{{ player['details']['rating'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <div class="button">
+        <p>
+            <a href="javascript:history.back()">Back</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/">Home</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/scorers">Top goal scorers</a>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="/assists">Top assists</a>
+        </p>
+    </div>
+</body>
+</html>
