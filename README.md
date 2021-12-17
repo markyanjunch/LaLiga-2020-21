@@ -61,7 +61,7 @@ Players data for each team are stored in **players_cache_<team_id>.json** with c
 2. 2020–21 La Liga Wikipedia page: https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga  
 This is the Wikipedia page for La Liga 2020-21 season. 
 It is used to get information of top goal scorers and top assist in that match season.  
-These two tables are scraped with beautifulsoup and cached using pandas. The methods are included in [scrape_cache.py](scrape_cache.py).  
+The data is scraped with beautifulsoup and cached using pandas. Methods are included in [scrape_cache.py](scrape_cache.py).  
 Cached files are stored under [data](data) folder:  
 [goalscorers.csv](data/goalscorers.csv) stores the Top goalscorers table under [Season statistics](https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga#Season_statistics) section.  
 [assists.csv](data/assists.csv) stores the Top assists table under [Season statistics](https://en.wikipedia.org/wiki/2020%E2%80%9321_La_Liga#Season_statistics) section.  
