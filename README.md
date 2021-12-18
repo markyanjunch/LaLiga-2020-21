@@ -214,6 +214,31 @@ The resulting tree is cached and stored in [tree.json](data/tree.json).
 The code that reads and caches the tree is included in [load_data.py](load_data.py)
 
 ## Interaction and Presentation Options
+User interactions are based on the Flask web application.  
+There are four general types of presentation options on the homepage:
+![](images/homepage.jpg)
+1. Tree structure view  
+If you go to Tree Structure, you will see the diagram of the data structure of this project.  
+You can click on the triangle buttons to show/hide teams and players:
+![](images/tree1.jpg)
+![](images/tree2.jpg)
+By clicking on the "see detail" buttons, you can see detailed information of the league/ the corresponding team.
+![](images/league.jpg)
+![](images/team.jpg)
+By clicking on "See all players in <team_name>", a list of all the players in the team will be shown with their statistics and information.
+![](images/all_player.jpg)
+You also have the option to look at individual players by clicking on their names in the tree structure.
+![](images/player.jpg)
+
+
+2. Overall standings  
+![](images/standings.jpg)
+3. Top 10 goal scorers/assists  
+![](images/scorer.jpg)
+![](images/assist.jpg)
+4. Visualizations of the number of players by team/nationality/position
+![](images/form.jpg)
+![](images/visual.jpg)
 
 
 ## Demo Video
