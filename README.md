@@ -237,7 +237,7 @@ If you go to Standings, you will see a table showing the rankings of the teams a
 If you go to Top Scorers/Top Assists, you will see a table showing the top 10 players in each category.  
 ![](images/scorer.jpg)  
 ![](images/assist.jpg)  
-4. Visualizations of the number of players by team/nationality/position
+4. Visualizations of the number of players by team/nationality/position  
 If you go to Visualizations, you will first be directed to an html form asking you which visualization to show.  
 ![](images/form.jpg)  
 After you click on the submit button, you will be redirected to a page showing the visualization of your choice.  
