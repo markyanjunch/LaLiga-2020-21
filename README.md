@@ -216,29 +216,31 @@ The code that reads and caches the tree is included in [load_data.py](load_data.
 ## Interaction and Presentation Options
 User interactions are based on the Flask web application.  
 There are four general types of presentation options on the homepage:
-![](images/homepage.jpg)
+![](images/homepage.jpg)  
 1. Tree structure view  
 If you go to Tree Structure, you will see the diagram of the data structure of this project.  
 You can click on the triangle buttons to show/hide teams and players:
-![](images/tree1.jpg)
-![](images/tree2.jpg)
-By clicking on the "see detail" buttons, you can see detailed information of the league/ the corresponding team.
-![](images/league.jpg)
-![](images/team.jpg)
-By clicking on "See all players in <team_name>", a list of all the players in the team will be shown with their statistics and information.
-![](images/all_player.jpg)
+![](images/tree1.jpg)  
+![](images/tree2.jpg)  
+By clicking on the "see detail" buttons, you can see detailed information of the league/the corresponding team.
+![](images/league.jpg)  
+![](images/team.jpg)  
+By clicking on "See all players in <team_name>" button in each team detail page, a list of all the players in the team will be shown with their statistics and information.
+![](images/all_player.jpg)  
 You also have the option to look at individual players by clicking on their names in the tree structure.
-![](images/player.jpg)
-
+![](images/player.jpg)  
 
 2. Overall standings  
-![](images/standings.jpg)
+If you go to Standings, you will see a table showing the rankings of the teams and their statistics.  
+![](images/standings.jpg)  
 3. Top 10 goal scorers/assists  
-![](images/scorer.jpg)
-![](images/assist.jpg)
+If you go to Top Scorers/Top Assists, you will see a table showing the top 10 players in each category.  
+![](images/scorer.jpg)  
+![](images/assist.jpg)  
 4. Visualizations of the number of players by team/nationality/position
-![](images/form.jpg)
-![](images/visual.jpg)
-
+If you go to Visualizations, you will first be directed to an html form asking you which visualization to show.
+![](images/form.jpg)  
+After you click on the submit button, you will be redirected to a page showing the visualization of your choice.
+![](images/visual.jpg)  
 
 ## Demo Video
