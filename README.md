@@ -225,7 +225,7 @@ You can click on the triangle buttons to show/hide teams and players:
 By clicking on the "see detail" buttons, you can see detailed information of the league/the corresponding team.
 ![](images/league.jpg)  
 ![](images/team.jpg)  
-By clicking on "See all players in <team_name>" button in each team detail page, a list of all the players in the team will be shown with their statistics and information.
+By clicking on "See all players in <team_name>" button on each team detail page, a list of all the players in the team will be shown with their statistics and information.
 ![](images/all_player.jpg)  
 You also have the option to look at individual players by clicking on their names in the tree structure.
 ![](images/player.jpg)  
@@ -243,4 +243,5 @@ If you go to Visualizations, you will first be directed to an html form asking y
 After you click on the submit button, you will be redirected to a page showing the visualization of your choice.
 ![](images/visual.jpg)  
 
-## Demo Video
+## Demo Video  
+https://youtu.be/XGyZeSqkvNo
