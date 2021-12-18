@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ```
 
 ### Run Application
-After getting secrets.py in the code folder and having all required pakage installed, in the terminal, run:
+After getting secrets.py in the code folder and having all required packages installed, in the terminal, run:
 ```commandline
 python laliga.py
 ```
