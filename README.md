@@ -222,12 +222,12 @@ If you go to Tree Structure, you will see the data structure diagram for this pr
 You can click on the triangle buttons to show/hide teams and players:
 ![](images/tree1.jpg)  
 ![](images/tree2.jpg)  
-By clicking on the "see detail" buttons, you can see detailed information of the league/the corresponding team.
+By clicking on the "see detail" buttons, you can see detailed information of the league/the corresponding team.  
 ![](images/league.jpg)  
 ![](images/team.jpg)  
-By clicking on "See all players in <team_name>" button on each team detail page, a list of all the players in the team will be shown with their statistics and information.
+By clicking on "See all players in <team_name>" button on each team detail page, a list of all the players in the team will be shown with their statistics and information.  
 ![](images/all_player.jpg)  
-You also have the option to look at individual players by clicking on their names in the tree structure.
+You also have the option to look at individual players by clicking on their names in the tree structure.  
 ![](images/player.jpg)  
 
 2. Overall standings  
@@ -238,9 +238,9 @@ If you go to Top Scorers/Top Assists, you will see a table showing the top 10 pl
 ![](images/scorer.jpg)  
 ![](images/assist.jpg)  
 4. Visualizations of the number of players by team/nationality/position
-If you go to Visualizations, you will first be directed to an html form asking you which visualization to show.
+If you go to Visualizations, you will first be directed to an html form asking you which visualization to show.  
 ![](images/form.jpg)  
-After you click on the submit button, you will be redirected to a page showing the visualization of your choice.
+After you click on the submit button, you will be redirected to a page showing the visualization of your choice.  
 ![](images/visual.jpg)  
 
 ## Demo Video  
