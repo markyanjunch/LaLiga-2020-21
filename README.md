@@ -218,7 +218,7 @@ User interactions are based on the Flask web application.
 There are four general types of presentation options on the homepage:
 ![](images/homepage.jpg)  
 1. Tree structure view  
-If you go to Tree Structure, you will see the diagram of the data structure of this project.  
+If you go to Tree Structure, you will see the data structure diagram for this project.  
 You can click on the triangle buttons to show/hide teams and players:
 ![](images/tree1.jpg)  
 ![](images/tree2.jpg)  
