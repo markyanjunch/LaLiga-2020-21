@@ -209,7 +209,9 @@ def Construct_Tree(root):
         json.dump(tree, treeFile)
     return tree
 ```
-For full codes, please see [utils.py](utils.py). The resulting tree is cached and stored in [tree.json](data/tree.json).  
+For full codes, please see [utils.py](utils.py).  
+The resulting tree is cached and stored in [tree.json](data/tree.json).  
+The code that reads and caches the tree is included in [load_data.py](load_data.py)
 
 ## Interaction and Presentation Options
 
