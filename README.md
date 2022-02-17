@@ -1,6 +1,9 @@
 # La Liga 2020-21
 *Final Project for SI507 Intermediate Programming @ Umich*
 
+## Demo Video  
+https://youtu.be/XGyZeSqkvNo
+
 ## Overview 
 <img src="images/LaLiga_Santander.png" width="100" align="right">
 
@@ -242,6 +245,3 @@ If you go to Visualizations, you will first be directed to an html form asking y
 ![](images/form.jpg)  
 After you click on the submit button, you will be redirected to a page showing the visualization of your choice.  
 ![](images/visual.jpg)  
-
-## Demo Video  
-https://youtu.be/XGyZeSqkvNo
